@@ -1,0 +1,50 @@
+body {
+  background-color: rgb(46, 106, 33);
+}
+
+h1 {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  font-size: 45pt;
+}
+
+#result {
+  color: white;
+  text-align: center;
+  font-size: 35pt;
+}
+
+@keyframes blinker {
+    0% {color: white; left:0px; top:0px}
+    100% {color: rgb(63, 203, 247); left:400px; top:0px;}
+}
+
+#winningresult {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 35pt;
+  animation-name: blinker;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function:linear;
+  animation-direction:alternate;
+
+}
+
+#winnerbox{
+  height: 50px;
+  width: 600px;
+  margin: auto;
+
+}
+
+#guess{
+  color: white;
+  text-align: center;
+  font-size: 35pt;
+}
